@@ -1930,6 +1930,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -1937,7 +1942,7 @@ __webpack_require__.r(__webpack_exports__);
     };
   },
   mounted: function mounted() {
-    console.log('Component mounted.');
+    console.log("Component mounted.");
   }
 });
 
@@ -19566,98 +19571,122 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("header", { staticClass: "bg-white border-b" }, [
-    _c("div", { staticClass: "flex items-center justify-between px-4 py-3" }, [
-      _vm._m(0),
-      _vm._v(" "),
-      _c("div", [
-        _c(
-          "button",
-          {
-            staticClass: "block text-black cursor-pointer focus:outline-none",
-            attrs: { type: "button" },
-            on: {
-              click: function($event) {
-                _vm.isOpen = !_vm.isOpen
-              }
-            }
-          },
-          [
-            _vm.isOpen
-              ? _c(
+  return _c(
+    "header",
+    {
+      staticClass:
+        "sm:flex sm:justify-between bg-white border-b sm:px-4 sm:py-0"
+    },
+    [
+      _c(
+        "div",
+        { staticClass: "flex items-center justify-between px-4 py-2 sm:ml-2" },
+        [
+          _vm._m(0),
+          _vm._v(" "),
+          _c("div", [
+            _c(
+              "button",
+              {
+                staticClass:
+                  "sm:hidden block text-black cursor-pointer focus:outline-none",
+                attrs: { type: "button" },
+                on: {
+                  click: function($event) {
+                    _vm.isOpen = !_vm.isOpen
+                  }
+                }
+              },
+              [
+                _c(
                   "svg",
                   {
-                    staticClass: "w-6 h-6 fill-current",
+                    staticClass: "w-5 h-5 fill-current",
                     attrs: {
-                      "stroke-width": "2",
-                      xmlns: "http://www.w3.org/2000/svg"
+                      xmlns: "http://www.w3.org/2000/svg",
+                      viewBox: "0 0 20 20"
                     }
                   },
-                  [_c("path", { attrs: { d: "M18 6L6 18M6 6l12 12" } })]
-                )
-              : _vm._e(),
-            _vm._v(" "),
-            !_vm.isOpen
-              ? _c(
-                  "svg",
-                  {
-                    staticClass: "w-6 h-6 fill-current",
-                    attrs: { viewBox: "0 0 32 32" }
-                  },
                   [
-                    _c("path", {
-                      attrs: {
-                        d:
-                          "M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"
-                      }
-                    })
+                    !_vm.isOpen
+                      ? _c("path", {
+                          attrs: {
+                            "fill-rule": "evenodd",
+                            "clip-rule": "evenodd",
+                            d: "M22 2V0H0v2h20zm0 4v2H0V6h20zm0 6v2H0v-2h20z"
+                          }
+                        })
+                      : _vm._e(),
+                    _vm._v(" "),
+                    _vm.isOpen
+                      ? _c("path", {
+                          attrs: {
+                            "fill-rule": "evenodd",
+                            "clip-rule": "evenodd",
+                            d:
+                              "M6 7.414l-4.293 4.293-1.414-1.414L4.586 6 .293 1.707 1.707.293 6 4.586 10.293.293l1.414 1.414L7.414 6l4.293 4.293-1.414 1.414L6 7.414z"
+                          }
+                        })
+                      : _vm._e()
                   ]
                 )
-              : _vm._e()
-          ]
-        )
-      ])
-    ]),
-    _vm._v(" "),
-    _c(
-      "div",
-      {
-        staticClass: "px-2 pt-1 pb-2",
-        class: _vm.isOpen ? "block border-t" : "hidden"
-      },
-      [
-        _c(
-          "a",
-          {
-            staticClass:
-              "block pl-2 text-teal-700 font-semibold py-2 hover:bg-teal-500",
-            attrs: { href: "#" }
-          },
-          [_vm._v("Link to Site")]
-        ),
-        _vm._v(" "),
-        _c(
-          "a",
-          {
-            staticClass:
-              "block pl-2 text-teal-700 font-semibold py-2 hover:bg-teal-500",
-            attrs: { href: "#" }
-          },
-          [_vm._v("Messages")]
-        ),
-        _vm._v(" "),
-        _c(
-          "a",
-          {
-            staticClass:
-              "block pl-2 text-teal-700 font-semibold py-2 hover:bg-teal-500",
-            attrs: { href: "#" }
-          },
-          [_vm._v("Tips")]
-        )
-      ]
-    )
-  ])
+              ]
+            )
+          ])
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass:
+            "sm:flex sm:items-center sm:justify-between px-2 pt-1 pb-2",
+          class: _vm.isOpen ? "block border-t" : "hidden"
+        },
+        [
+          _c(
+            "a",
+            {
+              staticClass:
+                "block pl-2 text-teal-700 font-semibold py-2 hover:bg-teal-500 hover:text-white rounded sm:px-3",
+              attrs: { href: "#" }
+            },
+            [_vm._v("Link to Site")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass:
+                "block pl-2 text-teal-700 font-semibold py-2 hover:bg-teal-500 hover:text-white rounded sm:mx-1 sm:px-3",
+              attrs: { href: "#" }
+            },
+            [_vm._v("Messages")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass:
+                "block pl-2 text-teal-700 font-semibold py-2 hover:bg-teal-500 hover:text-white rounded sm:mx-1 sm:px-3",
+              attrs: { href: "#" }
+            },
+            [_vm._v("Tips")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass:
+                "block pl-2 text-teal-700 font-semibold py-2 hover:bg-teal-500 hover:text-white rounded sm:mx-1 sm:px-3",
+              attrs: { href: "#" }
+            },
+            [_vm._v("Tips")]
+          )
+        ]
+      )
+    ]
+  )
 }
 var staticRenderFns = [
   function() {
@@ -19666,7 +19695,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", [
       _c("img", {
-        staticClass: "h-8",
+        staticClass: "w-8",
         attrs: { src: "img/logo.svg", alt: "logo" }
       })
     ])
@@ -32097,8 +32126,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\laragon\www\tailwindcss\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\laragon\www\tailwindcss\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\laragon\www\tailwind-ui-design\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\laragon\www\tailwind-ui-design\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
