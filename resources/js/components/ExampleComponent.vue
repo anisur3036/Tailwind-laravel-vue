@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="anis">
 		login 
 	</div>
 </template>
@@ -15,5 +15,5 @@ export default {
 </script>	
 
 <style lang="scss">
-
+ 
 </style>
