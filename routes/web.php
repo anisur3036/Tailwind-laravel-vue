@@ -18,6 +18,9 @@ Route::get('/', function () {
 Route::get('/home', function () {
     return view('dashbaord');
 });
+Route::get('/admin', function () {
+    return view('dashboard');
+});
 
 Auth::routes();
 
