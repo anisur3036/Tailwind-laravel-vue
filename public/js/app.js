@@ -2071,6 +2071,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -2133,7 +2142,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".sidenav li:last-child {\n  border-bottom: 1px solid #81e6d9;\n}\n.title {\n  text-indent: 20px;\n}\nsvg.icon {\n  position: absolute;\n  top: 5px;\n  right: 10px;\n  -webkit-transition: -webkit-transform 0.3s ease-in-out;\n  transition: -webkit-transform 0.3s ease-in-out;\n  transition: transform 0.3s ease-in-out;\n  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;\n}\nsvg.icon.open {\n  right: 8px;\n  -webkit-transform: rotateZ(90deg);\n          transform: rotateZ(90deg);\n}\n::-webkit-scrollbar {\n  width: 10px;\n}\n\n/* Track */\n::-webkit-scrollbar-track {\n  background: #38b2ac;\n}\n\n/* Handle */\n::-webkit-scrollbar-thumb {\n  background: #31979B;\n}\n\n/* Handle on hover */\n::-webkit-scrollbar-thumb:hover {\n  background: #555;\n}", ""]);
+exports.push([module.i, ".sidenav li:last-child {\n  border-bottom: 1px solid #81e6d9;\n}\n.title {\n  text-indent: 20px;\n}\nsvg.icon {\n  position: absolute;\n  top: 5px;\n  right: 10px;\n  -webkit-transition: -webkit-transform 0.3s ease-in-out;\n  transition: -webkit-transform 0.3s ease-in-out;\n  transition: transform 0.3s ease-in-out;\n  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;\n}\nsvg.icon.open {\n  right: 8px;\n  -webkit-transform: rotateZ(90deg);\n          transform: rotateZ(90deg);\n}\n.badge {\n  top: -3px;\n  right: 1px;\n  width: 12px;\n  height: 12px;\n  font-size: 8px;\n  line-height: 7px;\n  padding: 2px 2px 2px 4px;\n  border-radius: 50%;\n}\n.badge--red {\n  background-color: red;\n  color: white;\n}\n.badge--orange {\n  background-color: orange;\n  color: white;\n}\n::-webkit-scrollbar {\n  width: 10px;\n}\n\n/* Track */\n::-webkit-scrollbar-track {\n  background: #38b2ac;\n}\n\n/* Handle */\n::-webkit-scrollbar-thumb {\n  background: #31979B;\n}\n\n/* Handle on hover */\n::-webkit-scrollbar-thumb:hover {\n  background: #555;\n}", ""]);
 
 // exports
 
@@ -20700,7 +20709,73 @@ var render = function() {
           ]
         ),
         _vm._v(" "),
-        _vm._m(0)
+        _c("nav", { staticClass: "flex-1" }, [
+          _c("div", { staticClass: "flex justify-end pt-3 pb-3" }, [
+            _c(
+              "a",
+              {
+                staticClass: "px-1 mx-2 relative outline-none",
+                attrs: { href: "#" }
+              },
+              [
+                _c("span", { staticClass: "badge badge--red absolute z-10" }, [
+                  _vm._v("2")
+                ]),
+                _vm._v(" "),
+                _c(
+                  "svg",
+                  {
+                    staticClass:
+                      "w-6 h-6 fill-current text-white hover:text-black focus:text-black",
+                    attrs: { xmlns: "http://www.w3.org/2000/svg" }
+                  },
+                  [
+                    _c("path", {
+                      attrs: {
+                        d:
+                          "M15 18.998a3 3 0 01-6 0H4a1 1 0 010-2h1v-6a7 7 0 014.02-6.34 3 3 0 015.96 0 7 7 0 014.02 6.34v6h1a1 1 0 110 2h-5zm-4 0a1 1 0 002 0h-2zm0-12.9a5 5 0 00-4 4.9v6h10v-6a5 5 0 00-4-4.9v-1.1a1 1 0 00-2 0v1.1z"
+                      }
+                    })
+                  ]
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass: "px-1 mx-2 relative outline-none",
+                attrs: { href: "#" }
+              },
+              [
+                _c(
+                  "span",
+                  { staticClass: "badge badge--orange absolute z-10" },
+                  [_vm._v("2")]
+                ),
+                _vm._v(" "),
+                _c(
+                  "svg",
+                  {
+                    staticClass:
+                      "w-6 h-6 fill-current text-white hover:text-black focus:text-black",
+                    attrs: { xmlns: "http://www.w3.org/2000/svg" }
+                  },
+                  [
+                    _c("path", {
+                      attrs: {
+                        d:
+                          "M4 4h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6c0-1.1.9-2 2-2zm16 3.38V6H4v1.38l8 4 8-4zm0 2.24l-7.55 3.77a1 1 0 01-.9 0L4 9.62V18h16V9.62z"
+                      }
+                    })
+                  ]
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _vm._m(0)
+          ])
+        ])
       ]
     ),
     _vm._v(" "),
@@ -20782,16 +20857,11 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("nav", { staticClass: "flex flex-1 justify-end" }, [
-      _c("div", { staticClass: "pt-3 pb-3" }, [
-        _c("a", { attrs: { href: "#" } }, [_vm._v("Message")]),
-        _vm._v(" "),
-        _c("a", { attrs: { href: "#" } }, [_vm._v("Notification")]),
-        _vm._v(" "),
-        _c("a", { attrs: { href: "#" } }, [_vm._v("Flag")]),
-        _vm._v(" "),
-        _c("a", { attrs: { href: "#" } }, [_vm._v("UserSetting")])
-      ])
+    return _c("a", { staticClass: "px-1 mx-2", attrs: { href: "#" } }, [
+      _c("img", {
+        staticClass: "w-6 h-6 rounded-full border border-teal-300 outline-none",
+        attrs: { src: "/img/profile-photo.png", alt: "Anisur Rahman" }
+      })
     ])
   }
 ]

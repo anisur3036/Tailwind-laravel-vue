@@ -10,12 +10,21 @@
 						<path d="M4 5h16a1 1 0 110 2H4a1 1 0 010-2zm0 6h16a1 1 0 010 2H4a1 1 0 010-2zm0 6h16a1 1 0 010 2H4a1 1 0 010-2z"/>
 					</svg>
 				</a>
-			<nav class="flex flex-1 justify-end">
-				<div class="pt-3 pb-3">
-					<a href="#">Message</a>
-					<a href="#">Notification</a>
-					<a href="#">Flag</a>
-					<a href="#">UserSetting</a>
+			<nav class="flex-1">
+				<div class="flex justify-end pt-3 pb-3">
+					<a class="px-1 mx-2 relative outline-none" href="#">
+						<span class="badge badge--red absolute z-10">2</span>
+						<svg class="w-6 h-6 fill-current text-white hover:text-black focus:text-black" xmlns="http://www.w3.org/2000/svg"> 
+							<path d="M15 18.998a3 3 0 01-6 0H4a1 1 0 010-2h1v-6a7 7 0 014.02-6.34 3 3 0 015.96 0 7 7 0 014.02 6.34v6h1a1 1 0 110 2h-5zm-4 0a1 1 0 002 0h-2zm0-12.9a5 5 0 00-4 4.9v6h10v-6a5 5 0 00-4-4.9v-1.1a1 1 0 00-2 0v1.1z" />
+						</svg>
+					</a>
+					<a class="px-1 mx-2 relative outline-none" href="#">
+						<span class="badge badge--orange absolute z-10">2</span>
+						<svg class="w-6 h-6 fill-current text-white hover:text-black focus:text-black" xmlns="http://www.w3.org/2000/svg">
+							<path d="M4 4h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6c0-1.1.9-2 2-2zm16 3.38V6H4v1.38l8 4 8-4zm0 2.24l-7.55 3.77a1 1 0 01-.9 0L4 9.62V18h16V9.62z"/>
+						</svg>
+					</a>
+					<a class="px-1 mx-2" href="#"><img class="w-6 h-6 rounded-full border border-teal-300 outline-none" src="/img/profile-photo.png" alt="Anisur Rahman"></a>
 				</div>
 			</nav>
 		</header>
@@ -98,7 +107,24 @@ export default {
 			transform: rotateZ(90deg);
 		}
 	}
-
+	.badge {
+    top: -3px;
+    right: 1px;
+    width: 12px;
+    height: 12px;
+    font-size: 8px;
+    line-height: 7px;
+    padding: 2px 2px 2px 4px;
+    border-radius: 50%;
+	}
+	.badge--red {
+		background-color: red;
+		color: white;
+	}
+	.badge--orange {
+		background-color: orange;
+		color: white;
+	}
 
 	::-webkit-scrollbar {
 	  width: 10px;
